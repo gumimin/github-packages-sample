@@ -14,7 +14,7 @@ publishing {
             name = "GitHubPackages"
             url = URI("https://maven.pkg.github.com/gumimin/github-packages-sample")
             credentials {
-                username = project.findProperty("github.user") as String? ?: System.getenv("GITHUB_USER")
+//                 username = project.findProperty("github.user") as String? ?: System.getenv("GITHUB_USER")
                 password = project.findProperty("github.token") as String? ?: System.getenv("GITHUB_TOKEN")
             }
         }
